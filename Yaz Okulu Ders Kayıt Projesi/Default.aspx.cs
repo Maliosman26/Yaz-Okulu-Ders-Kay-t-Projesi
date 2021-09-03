@@ -19,12 +19,14 @@ namespace Yaz_Okulu_Ders_Kayıt_Projesi
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            EntityOgrenci ent = new EntityOgrenci();
-            ent.AD = TxtAd.Text;
-            ent.SOYAD = TxtSoyad.Text;
-            ent.NUMARA = TxtNumara.Text;
-            ent.SIFRE = TxtSifre.Text;
-            ent.FOTOGRAF = TxtFoto.Text;
+            EntityOgrenci ent = new EntityOgrenci
+            {
+                AD = TxtAd.Text,
+                SOYAD = TxtSoyad.Text,
+                NUMARA = TxtNumara.Text,
+                SIFRE = TxtSifre.Text,
+                FOTOGRAF = TxtFoto.Text
+            };
             BLLOgrenci.OgrenciEkleBLL(ent);
         }
     }

@@ -11,16 +11,22 @@
             <th>Öğrenci Numara</th>
             <th>Öğrenci Şifre</th>
             <th>Öğrenci Fotoğraf</th>
+            <th>Öğrenci Bakiye</th>
         </tr>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Murat</td>
-                <td>Yücedağ</td>
-                <td>1234</td>
-                <td>123</td>
-                <td>test</td>
-            </tr>
+            <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate>
+                    <tr>
+                        <td><%#Eval("ID")%></td>
+                        <td><%#Eval("AD")%></td>
+                        <td><%#Eval("SOYAD")%></td>
+                        <td><%#Eval("NUMARA")%></td>
+                        <td><%#Eval("FOTOGRAF")%></td>
+                        <td><%#Eval("SIFRE")%></td>
+                        <td><%#Eval("BAKIYE")%></td>
+                    </tr>
+                </ItemTemplate>
+            </asp:Repeater>
         </tbody>
     </table>
 </asp:Content>

@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using EntityLayer;
+using DataAccessLayer;
+using BusinessLogicLayer;
 
 namespace Yaz_Okulu_Ders_Kayıt_Projesi
 {
@@ -11,7 +14,9 @@ namespace Yaz_Okulu_Ders_Kayıt_Projesi
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            List<EntityOgrenci> OgrList = BLLOgrenci.BllListele();
+            Repeater1.DataSource = OgrList;
+            Repeater1.DataBind();
         }
     }
 }
