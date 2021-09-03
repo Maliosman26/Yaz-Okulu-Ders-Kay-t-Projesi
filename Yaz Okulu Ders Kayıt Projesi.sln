@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityOgrenc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,26 @@ Global
 		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|x64.Build.0 = Release|Any CPU
 		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|x86.ActiveCfg = Release|Any CPU
 		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|x86.Build.0 = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|x64.Build.0 = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Debug|x86.Build.0 = Debug|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|ARM.Build.0 = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|ARM64.Build.0 = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|x64.ActiveCfg = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|x64.Build.0 = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{B46E8014-4E7D-4D26-A79C-C22EC32F40C3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
