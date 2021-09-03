@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="OgrenciListesi.aspx.cs" Inherits="Yaz_Okulu_Ders_Kayıt_Projesi.OgrenciListesi" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="OgrenciListesi.aspx.cs" Inherits="Yaz_Okulu_Ders_Kayıt_Projesi.OgrenciListesi" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
@@ -12,6 +12,7 @@
             <th>Öğrenci Şifre</th>
             <th>Öğrenci Fotoğraf</th>
             <th>Öğrenci Bakiye</th>
+            <th>İşlemler</th>
         </tr>
         <tbody>
             <asp:Repeater ID="Repeater1" runat="server">
@@ -24,6 +25,10 @@
                         <td><%#Eval("FOTOGRAF")%></td>
                         <td><%#Eval("SIFRE")%></td>
                         <td><%#Eval("BAKIYE")%></td>
+                        <td>
+                            <asp:HyperLink NavigateUrl='<%#"~/OgrenciGuncelle.aspx?OGRID="+ Eval("ID") %>' ID="HyperLink1" CssClass="btn btn-danger" runat="server">Sil</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%#"~/OgrenciSil.aspx?OGRID="+ Eval("ID") %>' ID="HyperLink2" CssClass="btn btn-success" runat="server">Güncelle</asp:HyperLink>
+                        </td>
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>

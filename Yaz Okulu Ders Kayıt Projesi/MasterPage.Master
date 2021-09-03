@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Yaz_Okulu_Ders_Kayıt_Projesi.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="Yaz_Okulu_Ders_Kayıt_Projesi.Site1" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="#">Ana Sayfa</a></li>
                 <li><a href="OgrenciListesi.aspx">Öğrenciler</a></li>
-                <li><a href="#">Öğretmenler</a></li>
+                <li><a href="Default.aspx">Yeni Kayıt</a></li>
                 <li><a href="#">Dersler</a></li>
                 <li><a href="#">Kontenjanlar</a></li>
                 <li><a href="#">Yardım</a></li>
