@@ -8,7 +8,7 @@ using EntityLayer;
 
 namespace BusinessLogicLayer
 {
-    class BLLOgrenci
+   public class BLLOgrenci
     {
         public static int OgrenciEkleBLL(EntityOgrenci p)
         {

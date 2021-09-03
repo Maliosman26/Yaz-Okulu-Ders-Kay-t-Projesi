@@ -13,7 +13,7 @@ namespace DataAccessLayer
     {
         public static int OgrenciEkle(EntityOgrenci parametre)
         {
-            SqlCommand komut1 = new SqlCommand("insert into TblOgrenci (OgrAd,OgrSoyad,OgrNumara,OgrMail,OgrSifre) values (@p1,@p2,@p3,@p4,@p5)", Baglanti.bgl);
+            SqlCommand komut1 = new SqlCommand("insert into TBLOGRENCI (OGRAD,OGRSOYAD,OGRNUMARA,OGRFOTO,OGRSIFRE) values (@p1,@p2,@p3,@p4,@p5)", Baglanti.bgl);
             if (komut1.Connection.State != ConnectionState.Open)
             {
                 komut1.Connection.Open();

@@ -48,6 +48,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DbYazOkuluDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DbYazOkuluDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbYazOkuluDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -67,6 +72,17 @@
     </None>
     <None Include="DbYazOkuluDataSet.xss">
       <DependentUpon>DbYazOkuluDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbYazOkuluDataSet1.xsc">
+      <DependentUpon>DbYazOkuluDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DbYazOkuluDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbYazOkuluDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbYazOkuluDataSet1.xss">
+      <DependentUpon>DbYazOkuluDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
