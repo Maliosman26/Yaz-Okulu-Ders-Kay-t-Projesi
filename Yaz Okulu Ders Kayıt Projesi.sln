@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaz Okulu Ders Kayıt Proje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityOgrenci\EntityLayer.csproj", "{EB07E888-7F1C-4A29-9ADD-8BC3059BF106}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,26 @@ Global
 		{EB07E888-7F1C-4A29-9ADD-8BC3059BF106}.Release|x64.Build.0 = Release|Any CPU
 		{EB07E888-7F1C-4A29-9ADD-8BC3059BF106}.Release|x86.ActiveCfg = Release|Any CPU
 		{EB07E888-7F1C-4A29-9ADD-8BC3059BF106}.Release|x86.Build.0 = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|ARM.Build.0 = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|x64.Build.0 = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Debug|x86.Build.0 = Debug|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|ARM.ActiveCfg = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|ARM.Build.0 = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|ARM64.Build.0 = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|x64.ActiveCfg = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|x64.Build.0 = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|x86.ActiveCfg = Release|Any CPU
+		{81AF29A4-3A67-4B0C-8EC6-2BDD510A5DE9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
