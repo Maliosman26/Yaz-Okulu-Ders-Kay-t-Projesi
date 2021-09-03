@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityOgrenci
+namespace EntityLayer
 {
     public class EntityOgrenci
     {
@@ -48,6 +48,13 @@ namespace EntityOgrenci
         {
             get { return bakiye; }
             set { bakiye = value; }
+        }
+
+        private string sifre;
+        public string SIFRE
+        {
+            get { return sifre; }
+            set { sifre = value; }
         }
     }
 }
