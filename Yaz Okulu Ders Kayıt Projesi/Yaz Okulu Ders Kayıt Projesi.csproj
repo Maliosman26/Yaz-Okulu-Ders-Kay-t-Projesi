@@ -67,14 +67,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Anasayfa.aspx" />
     <Content Include="Dersler.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
     <Content Include="OgrenciListesi.aspx" />
     <Content Include="OgrenciSil.aspx" />
+    <Content Include="Resimler\sorun1.png" />
+    <Content Include="Resimler\yazokulures,m3.png" />
+    <Content Include="Resimler\yazokuluresim1.jpg" />
+    <Content Include="Resimler\yazokuluresim2.jpg" />
+    <Content Include="Resimler\yazokuluresim4.png" />
+    <Content Include="Resimler\yazokuluresim5.jpg" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anasayfa.aspx.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.aspx.designer.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dersler.aspx.cs">
       <DependentUpon>Dersler.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

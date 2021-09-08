@@ -16,7 +16,7 @@ namespace BusinessLogicLayer
         }
         public static int TalepEkleBLL(EntityBasvuruForm p)
         {
-            if (p.BASOGRID != null && p.BASDERSID != null)
+            if (p.BASOGRID >=0 && p.BASDERSID >= 0)
             {
                 return DALDers.TalepEkle(p);
             }

@@ -16,7 +16,7 @@ namespace Yaz_Okulu_Ders_Kayıt_Projesi
         {
             if (Page.IsPostBack == false)
             {
-                List<EntityDers> EntDers = BLLDers.BllListele();
+                
                 DropDownList1.DataSource = BLLDers.BllListele();
                 DropDownList1.DataTextField = "DERSAD";
                 DropDownList1.DataValueField = "ID";
@@ -26,9 +26,11 @@ namespace Yaz_Okulu_Ders_Kayıt_Projesi
         protected void Button1_Click(object sender, EventArgs e)
         {
             //TextBox1.Text = DropDownList1.SelectedValue.ToString();
-            EntityBasvuruForm ent = new EntityBasvuruForm();
-            ent.BASOGRID = int.Parse(TextBox1.Text);
-            ent.BASDERSID = int.Parse(DropDownList1.SelectedValue.ToString());
+            EntityBasvuruForm ent = new EntityBasvuruForm
+            {
+                BASOGRID = int.Parse(TextBox1.Text),
+                BASDERSID = int.Parse(DropDownList1.SelectedValue.ToString())
+            };
             BLLDers.TalepEkleBLL(ent);
         }
     }
