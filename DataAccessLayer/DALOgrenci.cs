@@ -61,5 +61,44 @@ namespace DataAccessLayer
             komut3.Parameters.AddWithValue("@p1", parametre);
             return komut3.ExecuteNonQuery() > 0;
         }
+
+        public static List<EntityOgrenci> OgrenciDetay(int id)
+        {
+            List<EntityOgrenci> degerler = new List<EntityOgrenci>();
+            SqlCommand komut4 = new SqlCommand("Select * From TBLOGRENCI where OGRID=@p1", Baglanti.bgl);
+            komut4.Parameters.AddWithValue("@p1", id);
+            if (komut4.Connection.State != ConnectionState.Open)
+            {
+                komut4.Connection.Open();
+            }
+            SqlDataReader dr = komut4.ExecuteReader();
+            while (dr.Read())
+            {
+                EntityOgrenci ent = new EntityOgrenci
+                {
+                    AD = dr["OGRAD"].ToString(),
+                    SOYAD = dr["OGRSOYAD"].ToString(),
+                    NUMARA = dr["OGRNUMARA"].ToString(),
+                    FOTOGRAF = dr["OGRFOTO"].ToString(),
+                    SIFRE = dr["OGRSIFRE"].ToString(),
+                    BAKIYE = Convert.ToDouble(dr["OGRBAKIYE"].ToString())
+                };
+                degerler.Add(ent);
+            }
+            dr.Close();
+            return degerler;
+        }
+
+        public static bool OgrenciGuncelle(EntityOgrenci deger)
+        {
+            SqlCommand komut5 = new SqlCommand("Update TBLOGRENCI set OGRAD=@p1,OGRSOYAD=@p2,OGRNUMARA=@p3,OGRFOTO=@p4,OGRSIFRE=@p5 where OGRID=@p6", Baglanti.bgl);
+            komut5.Parameters.AddWithValue("@p1", deger.AD);
+            komut5.Parameters.AddWithValue("@p2", deger.SOYAD);
+            komut5.Parameters.AddWithValue("@p3", deger.NUMARA);
+            komut5.Parameters.AddWithValue("@p4", deger.FOTOGRAF);
+            komut5.Parameters.AddWithValue("@p5", deger.SIFRE);
+            komut5.Parameters.AddWithValue("@p6", deger.ID);
+            return komut5.ExecuteNonQuery() > 0;
+        }
     }
 }

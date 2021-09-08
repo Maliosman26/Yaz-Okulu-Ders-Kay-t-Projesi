@@ -8,17 +8,17 @@ using EntityLayer;
 
 namespace BusinessLogicLayer
 {
-   public class BLLOgrenci
+    public class BLLOgrenci
     {
         public static int OgrenciEkleBLL(EntityOgrenci p)
         {
-            if(p.AD!=null && p.SOYAD!=null && p.NUMARA!=null && p.SIFRE!=null && p.FOTOGRAF!=null)
+            if (p.AD != null && p.SOYAD != null && p.NUMARA != null && p.SIFRE != null && p.FOTOGRAF != null)
             {
                 return DALOgrenci.OgrenciEkle(p);
             }
             return -1;
         }
-        public static List<EntityOgrenci>BllListele()
+        public static List<EntityOgrenci> BllListele()
         {
             return DALOgrenci.OgrenciListesi();
         }
@@ -27,6 +27,18 @@ namespace BusinessLogicLayer
             if (p != null)
             {
                 return DALOgrenci.OgrenciSil(p);
+            }
+            return false;
+        }
+        public static List<EntityOgrenci> BllDetay(int p)
+        {
+            return DALOgrenci.OgrenciDetay(p);
+        }
+        public static bool OgrenciGuncelleBLL(EntityOgrenci p)
+        {
+            if (p.AD != null && p.SOYAD != null && p.NUMARA != null && p.SIFRE != null && p.FOTOGRAF != null && p.ID > 0)
+            {
+                return DALOgrenci.OgrenciGuncelle(p);
             }
             return false;
         }
