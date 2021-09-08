@@ -17,14 +17,31 @@ namespace Yaz_Okulu_Ders_Kayıt_Projesi
             int x = Convert.ToInt32(Request.QueryString["OGRID"].ToString());
             Txtid.Text = x.ToString();
             Txtid.Enabled = false;
+
+            if (Page.IsPostBack == false)
+            {
+
+                List<EntityOgrenci> OgrList = BLLOgrenci.BllDetay(x);
+                TxtAd.Text = OgrList[0].AD.ToString();
+                TxtSoyad.Text = OgrList[0].SOYAD.ToString();
+                TxtNumara.Text = OgrList[0].NUMARA.ToString();
+                TxtFoto.Text = OgrList[0].FOTOGRAF.ToString();
+                TxtSifre.Text = OgrList[0].SIFRE.ToString();
+                TxtAd.Text = OgrList[0].AD.ToString();
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
             EntityOgrenci ent = new EntityOgrenci();
-            List<EntityOgrenci> OgrList = BLLOgrenci.BllDetay(x);
-            TxtAd.Text = OgrList[0].AD.ToString();
-            TxtSoyad.Text = OgrList[0].SOYAD.ToString();
-            TxtNumara.Text = OgrList[0].NUMARA.ToString();
-            TxtFoto.Text = OgrList[0].FOTOGRAF.ToString();
-            TxtSifre.Text = OgrList[0].SIFRE.ToString();
-            TxtAd.Text = OgrList[0].AD.ToString();
+            ent.AD = TxtAd.Text;
+            ent.SOYAD = TxtSoyad.Text;
+            ent.SIFRE = TxtSifre.Text;
+            ent.NUMARA = TxtNumara.Text;
+            ent.FOTOGRAF = TxtFoto.Text;
+            ent.ID = Convert.ToInt32(Txtid.Text);
+            BLLOgrenci.OgrenciGuncelleBLL(ent);
+            Response.Redirect("OgrenciListesi.aspx");
         }
     }
 }
