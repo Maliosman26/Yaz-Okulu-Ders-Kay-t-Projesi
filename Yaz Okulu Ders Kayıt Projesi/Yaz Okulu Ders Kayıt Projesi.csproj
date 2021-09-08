@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dersler.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
     <Content Include="OgrenciListesi.aspx" />
     <Content Include="OgrenciSil.aspx" />
@@ -74,6 +75,13 @@
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dersler.aspx.cs">
+      <DependentUpon>Dersler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dersler.aspx.designer.cs">
+      <DependentUpon>Dersler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="OgrenciGuncelle.aspx.cs">
       <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
