@@ -67,12 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="OgrenciGuncelle.aspx" />
     <Content Include="OgrenciListesi.aspx" />
     <Content Include="OgrenciSil.aspx" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OgrenciGuncelle.aspx.cs">
+      <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciGuncelle.aspx.designer.cs">
+      <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="OgrenciListesi.aspx.cs">
       <DependentUpon>OgrenciListesi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
