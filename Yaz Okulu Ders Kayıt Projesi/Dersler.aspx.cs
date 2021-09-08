@@ -25,7 +25,11 @@ namespace Yaz_Okulu_Ders_Kayıt_Projesi
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            TextBox1.Text = DropDownList1.SelectedValue.ToString();
+            //TextBox1.Text = DropDownList1.SelectedValue.ToString();
+            EntityBasvuruForm ent = new EntityBasvuruForm();
+            ent.BASOGRID = int.Parse(TextBox1.Text);
+            ent.BASDERSID = int.Parse(DropDownList1.SelectedValue.ToString());
+            BLLDers.TalepEkleBLL(ent);
         }
     }
 }
