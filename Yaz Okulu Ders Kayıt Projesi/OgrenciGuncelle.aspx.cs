@@ -33,13 +33,15 @@ namespace Yaz_Okulu_Ders_Kayıt_Projesi
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            EntityOgrenci ent = new EntityOgrenci();
-            ent.AD = TxtAd.Text;
-            ent.SOYAD = TxtSoyad.Text;
-            ent.SIFRE = TxtSifre.Text;
-            ent.NUMARA = TxtNumara.Text;
-            ent.FOTOGRAF = TxtFoto.Text;
-            ent.ID = Convert.ToInt32(Txtid.Text);
+            EntityOgrenci ent = new EntityOgrenci
+            {
+                AD = TxtAd.Text,
+                SOYAD = TxtSoyad.Text,
+                SIFRE = TxtSifre.Text,
+                NUMARA = TxtNumara.Text,
+                FOTOGRAF = TxtFoto.Text,
+                ID = Convert.ToInt32(Txtid.Text)
+            };
             BLLOgrenci.OgrenciGuncelleBLL(ent);
             Response.Redirect("OgrenciListesi.aspx");
         }

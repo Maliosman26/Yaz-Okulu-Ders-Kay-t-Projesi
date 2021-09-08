@@ -34,5 +34,16 @@ namespace DataAccessLayer
             dr.Close();
             return degerler;
         }
+        public static int TalepEkle(EntityBasvuruForm parametre)
+        {
+            SqlCommand komut = new SqlCommand("insert into TBLBASVURUFORM (OGRENCIID,DERSID) values (@p1,@p2)", Baglanti.bgl);
+            komut.Parameters.AddWithValue("@p1", parametre.BASOGRID);
+            komut.Parameters.AddWithValue("@p2", parametre.BASDERSID);
+            if(komut.Connection.State != ConnectionState.Open)
+            {
+                komut.Connection.Open();
+            }
+            return komut.ExecuteNonQuery();
+        }
     }
 }
