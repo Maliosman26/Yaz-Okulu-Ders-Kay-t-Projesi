@@ -14,13 +14,13 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="../Resimler/yazokuluresim1.jpg" alt="Los Angeles" style="width: 100%;">
+                    <img src="../Resimler/yazokuluresim1.jpg" alt="Los Angeles" style="width: 1000px;">
                 </div>
                 <div class="item">
-                    <img src="../Resimler/yazokuluresim4.png" alt="Chicago" style="width: 100%;">
+                    <img src="../Resimler/yazokuluresim4.png" alt="Chicago" style="width: auto; height:auto">
                 </div>
                 <div class="item">
-                    <img src="../Resimler/yazokuluresim5.jpg" alt="New york" style="width: 100%;">
+                    <img src="../Resimler/yazokuluresim5.jpg" alt="New york" style="width: auto; height:auto">
                 </div>
             </div>
 
